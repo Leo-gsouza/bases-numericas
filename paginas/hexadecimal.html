@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../principal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Hexadecimal</title>
+</head>
+<body>
+    <header>
+        <span class="material-symbols-outlined" id="icon" onclick="abrirMenu(menu)">widgets</span>
+    </header>
+    <menu id="menu" >
+        <div>
+            <a href="../index.html">Menu</a>
+            <a href="../paginas/decimal.html">Decimal</a>
+            <a href="../paginas/binario.html">Binario</a>
+            <a href="../paginas/hexadecimal.html">Hexadecimal</a>
+        </div>
+    </menu>
+    <main>
+        <section>
+            <img src="../imagens/Hexadecimal.jpg" alt="Hexadecimal" class="intro">
+            <h1>Sistema Hexadecimal</h1>
+            <p>O sistema hexadecimal é um sistema de numeração de base 16. Utiliza dezesseis símbolos: (0-9) depois (A-F)</p>
+            <div class="conversao">
+                <div class="sistema">
+                    <p>Decimal</p>
+                    <p>0</p>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                    <p>9</p>
+                    <p>10</p>
+                    <p>11</p>
+                    <p>12</p>
+                    <p>13</p>
+                    <p>14</p>
+                    <p>15</p>
+                </div>
+                <div class="sistema">
+                    <p>Hexadecimal</p>
+                    <p>0</p>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                    <p>9</p>
+                    <p>A</p>
+                    <p>B</p>
+                    <p>C</p>
+                    <p>D</p>
+                    <p>E</p>
+                    <p>F</p>
+                </div>
+            </div>
+
+            <h2>Hexadecimal para Decimal</h2>
+            <p>Para converter um número hexadecimal para decimal, você deve multiplicar cada dígito do número hexadecimal pelo valor de 16 elevado à posição do dígito, contando da direita para a esquerda, começando em 0. Em seguida, você soma todos esses valores.</p>
+            <p>Número Hexadecimal 2FA</p>
+            <p>Identifique as <strong>potências de 16</strong> para cada posição:</p>
+            <p> 2 x 16<sup>2</sup>    +    F(15) x 16<sup>1</sup>    +    A(10) x 16<sup>0</sup></p>
+            <p> 512 + 240 + 10 = 762</p>
+            <p>Portanto, o número Hexadecimal 2FA em decimal é 762.</p> 
+            <div class="input">
+                <label for="hexId">Hexadecimal:</label>
+                <input type="text" name="numTex" id="hexId">
+                <input type="submit" value="Calcular" onclick="paraDecimal(hexId, res)">
+                <div class="resultado" id="res"></div>
+            </div>
+
+            <h2>Decimal para Hexadecimal</h2>
+            <p>Converter um número decimal para hexadecimal envolve dividir o número decimal repetidamente por 16, registrando o resto em cada divisão. Esses restos são então usados para formar o número hexadecimal.</p>
+            <p>Para converter o número decimal 755 para hexadecimal:</p>
+            <p>755 ÷ 16 = 47 quociente, 3 resto </p>
+            <p>47 ÷ 16 = 2 (quociente) e 15(F) (resto)</p>
+            <p>2 ÷ 16 = 0 (quociente) e 2 (resto).</p>
+            <p>Agora, escreva os restos na ordem inversa: Número Hexadecimal: 2F3.</p>
+
+            <div class="input">
+                <label for="decId">Decimal:</label>
+                <input type="number" name="numDec" id="decId">
+                <input type="submit" value="Calcular" onclick="paraHexadecimal(decId, res2)">
+                <div class="resultado" id="res2"></div>
+            </div>
+          
+        </section>
+    </main>
+
+    <script src="../principal.js"></script>
+    <script src="../scripts/hexadecimal.js"></script>
+</body>
+</html>

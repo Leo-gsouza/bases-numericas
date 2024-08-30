@@ -1,0 +1,281 @@
+@charset "UTF-8";
+
+/* =========================================Fontes================================================ */
+@import url('https://fonts.googleapis.com/css2?family=RocknRoll+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cambay:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* =========================================Paleta================================================ */
+/* Noite Escura = #2A3D46 */
+/* Azul Intuitivo #9BB5D1 */
+/* Mar Sem Fim #385D74 */
+/* Extra Branco #EEEFEA */
+/* Nugget #ffde90 */
+/* Chá Refrescante #ADD2CC*/
+
+/* =========================================Variaveis================================================ */
+
+:root{
+    --fonte-titulo: "RocknRoll One", sans-serif;
+    --fonte-pixels: "Pixelify Sans";
+    --fonte-padrao: "Cambay";
+    --cor1: #2A3D46;
+    --cor2: #9BB5D1;
+    --cor3: #385D74;
+    --cor4: #EEEFEA;
+    --cor5: #ffde90;
+    --cor6: #ADD2CC;
+}
+
+/* =========================================Geral================================================ */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* =========================================Header================================================ */
+header{
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--cor4);
+}
+
+header > span#icon{
+    font-size: 3em;
+    padding: 5px;
+
+    color: rgb(4, 173, 4);
+    
+
+    animation: rotation 20s alternate infinite;
+}
+
+
+/* =========================================Menu================================================ */
+menu#menu {
+    display: none;
+}
+menu#menu > div{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+menu#menu > div > a{
+    flex: auto;
+
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--fonte-pixels);
+
+    background-color: var(--cor3);
+    color: var(--cor5);
+}
+/* =========================================Section================================================ */
+
+section{
+    max-width: 700px;
+    min-width: 300px;
+    padding-bottom: 10px;
+}
+
+section > img.intro{
+    width: 100%;
+}
+
+section > h1{
+    padding: 5px;
+
+    text-align: center;
+    font-family: var(--fonte-titulo);  
+}
+
+section > h2{
+    padding: 5px;
+
+    font-size: 1em;
+    text-align: center;
+    font-family: var(--fonte-titulo);  
+}
+
+section > p{
+    padding: 5px 25px;
+
+    font-size: 1.1em;
+    text-align: justify;
+    text-indent: 5px;
+    font-family: var(--fonte-padrao);
+    line-height: 22px;
+}
+
+section > p > strong{
+    font-weight: bold;
+    color: var(--cor3);
+}
+
+strong.calc{
+    padding: 0px 7px;
+
+    font-weight: bold;
+
+    color: var(--cor1);
+    border-radius: 5px;
+
+    animation: cores 8s alternate infinite;
+}
+
+
+
+/* =========================================input================================================ */
+div.input{
+    width: 300px;
+    padding: 15px 5px;
+    margin: 5px auto;
+    margin-bottom: 30px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+
+    background-color: var(--cor4);
+    border: 2px solid var(--cor3);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.377);
+}
+
+div.input > input{
+    width: 25px;
+    
+}
+div.input > label{
+    flex: 0 0 25%;
+  
+}
+
+div.input > input[type="number"], input[type='text']{
+    flex: 0 1 40%;
+    margin: 0px 5px;
+
+    text-align: center;
+    font-family: var(--fonte-titulo);
+    font-size: 1.2;
+
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.26);
+}
+
+div.input > input[type='submit']{
+    flex: 2 0 25%;
+
+    font-size: 1.1em;
+    font-variant: small-caps;
+
+    background-color: var(--cor5);
+    border: 2px solid var(--cor3);
+}
+
+div.input > div.resultado{
+    flex: 0 0 100%;
+}
+
+div.resultado > h1{
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+div.resultado > p{
+    padding: 1.5px;
+
+    text-align: center;
+    font-size: 1em;
+    font-family: var(--fonte-titulo);
+    text-transform: uppercase;
+}
+
+div.resultado > p > strong{
+    padding: 1px 4px;
+
+    background-color: var(--cor5);
+    border-radius: 10px;
+
+}
+
+/* =========================================conversão================================================ */
+div.conversao{
+    width: 320px;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--cor5);
+    border: 3px solid var(--cor6);
+}
+
+div.conversao > div.sistema{
+    padding: 10px;
+    flex: 1 1 130px;
+}
+
+div.sistema > p{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: var(--fonte-padrao);
+    line-height: 25px;
+}
+
+div.sistema > p > strong{
+    padding: 0px 7px;
+    background-color: var(--cor2);
+    border: 2px solid var(--cor3);
+}
+
+
+
+
+/* =========================================animation================================================ */
+@keyframes rotation{
+    0%{
+      
+        color: rgb(201, 201, 1);
+    }
+
+    25%{
+        color: red;
+    }
+
+    50%{
+        color: rgb(95, 95, 230);
+    }
+
+    75%{
+        color: rgb(4, 173, 4);
+    }
+
+    100%{
+        rotate: 360deg;
+    }
+}
+
+@keyframes cores{
+    0%{
+        background-color: white;
+    }
+    100%{
+        background-color: var(--cor5);
+    }
+}

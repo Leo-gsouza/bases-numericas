@@ -1,0 +1,31 @@
+String para Lista de Caracteres:
+
+let str = "exemplo";
+let lista = str.split("");  // ["e", "x", "e", "m", "p", "l", "o"]
+
+Número para Lista de Dígitos:
+let num = 12345;
+let lista = num.toString().split("").map(Number);  // [1, 2, 3, 4, 5]
+
+
+Objeto para Lista de Valores:
+let obj = { a: 1, b: 2, c: 3 };
+let lista = Object.values(obj);  // [1, 2, 3]
+
+
+Objeto para Lista de Chaves:
+let obj = { a: 1, b: 2, c: 3 };
+let lista = Object.keys(obj);  // ["a", "b", "c"]
+
+
+Objeto para Lista de Pares [chave, valor]:
+let obj = { a: 1, b: 2, c: 3 };
+let lista = Object.entries(obj);  // [["a", 1], ["b", 2], ["c", 3]]
+
+
+Único valor em uma Lista:
+let valor = 42;
+let lista = [valor];  // [42]
+
+
+Esses métodos cobrem os casos mais comuns. Se precisar de algo mais específico, só avisar!

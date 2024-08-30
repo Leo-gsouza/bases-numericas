@@ -1,0 +1,5 @@
+ binario = `<p>${cont}ª Casa = 1</p>` + binario
+ # Dessa forma o ultimo evento fica acima
+
+ binario += `<p>${cont}ª Casa = 1</p>`
+ # Dessa forma o ultimo evento fica em baixo

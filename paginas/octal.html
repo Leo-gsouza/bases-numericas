@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../principal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Octal</title>
+</head>
+<body>
+    <header>
+        <span class="material-symbols-outlined" id="icon" onclick="abrirMenu(menu)">widgets</span>
+    </header>
+    <menu id="menu" >
+        <div>
+            <a href="../index.html">Menu</a>
+            <a href="../paginas/decimal.html">Decimal</a>
+            <a href="../paginas/binario.html">Binario</a>
+            <a href="../paginas/hexadecimal.html">Hexadecimal</a>
+        </div>
+    </menu>
+    <main>
+        <section>
+            <img src="../imagens/octal.jpg" alt="octal" class="intro">
+            <h1>Sistema Octal</h1>
+            <p>O sistema octal é um sistema de numeração em base 8, o que significa que utiliza oito dígitos diferentes para representar números: 0, 1, 2, 3, 4, 5, 6 e 7.</p>
+
+            <h2>Octal para Decimal</h2>
+            <p>A conversão de um número octal para decimal envolve multiplicar cada dígito do número octal pela potência de 8 correspondente à sua posição e, em seguida, somar os resultados. Exemplo:</p>
+            <p>Número octal 371</p>
+            <p>Identifique as <strong>potências de 8</strong> para cada posição:</p>
+            <p> 3 x 8<sup>2</sup>    +    7 x 8<sup>1</sup>    +    1 x 8<sup>0</sup></p>
+            <p> 192 + 56 + 1 = 249</p>
+            <p>Portanto, o número octal 371 em decimal é 249.</p> 
+            <div class="input">
+                <label for="octId">Octal:</label>
+                <input type="number" name="numOct" id="octId">
+                <input type="submit" value="Calcular" onclick="paraDecimal(octId, res)">
+                <div class="resultado" id="res"></div>
+            </div>
+
+            <h2>Decimal para Octal</h2>
+            <p>Para converter um número decimal para octal manualmente, você pode seguir um processo simples de divisão sucessiva por 8. Vou descrever os passos:</p>
+            <p>Exemplo de Conversão: 156 (Decimal) para Octal</p>
+            <p>156 ÷ 8 = 19 (quociente) e 4 (resto).</p>
+            <p>19 ÷ 8 = 2 (quociente) e 3 (resto)</p>
+            <p>2 ÷ 8 = 0 (quociente) e 2 (resto).</p>
+            <p>Agora, escreva os restos na ordem inversa: Número octal: 234.</p>
+
+            <div class="input">
+                <label for="decId">Decimal:</label>
+                <input type="number" name="numDec" id="decId">
+                <input type="submit" value="Calcular" onclick="paraOctal(decId, res2)">
+                <div class="resultado" id="res2"></div>
+            </div>
+          
+        </section>
+    </main>
+
+    <script src="../principal.js"></script>
+    <script src="../scripts/octal.js"></script>
+</body>
+</html>

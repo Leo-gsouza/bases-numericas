@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../principal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Binario</title>
+</head>
+<body>
+    <header>
+        <span class="material-symbols-outlined" id="icon" onclick="abrirMenu(menu)">widgets</span>
+    </header>
+    <menu id="menu" >
+        <div>
+            <a href="../index.html">Menu</a>
+            <a href="../paginas/decimal.html">Decimal</a>
+            <a href="../paginas/octal.html">Octal</a>
+            <a href="../paginas/hexadecimal.html">Hexadecimal</a>
+        </div>
+    </menu>
+    <main>
+        <section>
+            <img src="../imagens/binario.jpg" alt="binario" class="intro">
+            <h1>Sistema Binario</h1>
+            <p>Um sistema de numeração posicional que <strong>utiliza apenas dois dígitos: 0 e 1</strong>. Em contraste com o sistema decimal, que é a base 10. No sistema binário, cada posição em um número representa uma potência de 2.</p>
+
+            <h2>Características Principais:</h2>
+            <p>No sistema decimal, a contagem começa em 0 e vai até 9. Ao atingir 9, completa-se a casa das unidades e inicia-se a casa das dezenas. Por exemplo:</p>
+            <p><strong>Unidades</strong> (10<sup>0</sup>) 0, 1, 2, 3, 4, 5, 6, 7, 8, 9</p>
+            <p><strong>Dezenas</strong> (10<sup>1</sup>) 10, 11, 12, 13, 14, 15, 16, 17, 18, 19</p>
+            <p>No sistema binario, a contagem começa em 0 e vai até 1. Ao atingir 1, completa-se a 1ª casa binaria e inicia-se a 2ª casa . Por exemplo:</p>
+            <p><strong>1ª Casa</strong> (2<sup>0</sup>) 0, 1</p>
+            <p><strong>2ª Casa</strong> (2<sup>1</sup>) 10, 11</p>
+            <p><strong>3ª Casa</strong> (2<sup>2</sup>) 100, 101, 110, 111</p>
+            <p><strong>4ª Casa</strong> (2<sup>3</sup>) 1000, 1001, 1010, 1011, 1100, 1101, 1111</p>
+            
+            <h2>Corversão</h2>
+            <p>Pode ser convertido para o sistema decimal e vice-versa. Exemplo:</p>
+            <p>Vamos converter o número binário 1011 para decimal.</p>
+            
+            <div class="conversao">
+                <div class="sistema">
+                    <p>Decimal</p>
+                    <p>0</p>
+                    <p>1</p>
+                    <p>2</p>
+                    <p>3</p>
+                    <p>4</p>
+                    <p>5</p>
+                    <p>6</p>
+                    <p>7</p>
+                    <p>8</p>
+                    <p>9</p>
+                    <p>10</p>
+                    <p><strong>11</strong></p>
+                </div>
+                <div class="sistema">
+                    <p>Binário</p>
+                    <p>0</p>
+                    <p>1</p>
+                    <p>10</p>
+                    <p>11</p>
+                    <p>100</p>
+                    <p>101</p>
+                    <p>110</p>
+                    <p>111</p>
+                    <p>1000</p>
+                    <p>1001</p>
+                    <p>1010</p>
+                    <p><strong>1011</strong></p>
+                </div>
+            </div>
+            <p>Portanto, o número binário 1011 é igual a 11 em decimal.</p>
+            <p><strong>Há uma forma mais simples de calcular a conversão</strong>, sem precisar iniciar a contagem a partir do zero.</p>
+            <h2>Conversão de Binario para Decimal:</h2>
+            <p>Escreva o número binário e suas potências de 2:</p>
+            <p>4ª casa = 1 x 2<sup>3</sup> = 8</p>
+            <p>3ª casa = 0 x 2<sup>2</sup> = 0</p>
+            <p>2ª casa = 1 x 2<sup>1</sup> = 2</p>
+            <p>1ª casa = 1 x 2<sup>0</sup> = 1</p>
+            <p>A soma total: 8 + 0 + 2 + 1 = 11 </p>
+
+            <div class="input">
+                <label for="binId">Binario:</label>
+                <input type="number" name="numBin" id="binId">
+                <input type="submit" value="Calcular" onclick="paraDecimal(binId, res2)">
+                <div class="resultado" id="res2"></div>
+            </div>
+
+            <h2>Conversão de Decimal para Binário:</h2>
+            <p>Para converter um número decimal para binário, você pode dividir o número por 2 repetidamente e registrar os restos. Por exemplo, para o número decimal 11:</p>
+            
+            <p>11 dividido por 2 é 5, resto 1</p>
+            <p>5 dividido por 2 é 2, resto 1</p>
+            <p>2 dividido por 2 é 1, resto 0</p>
+            <p>1 dividido por 2 é 0, resto 1 </p>
+            <p>Como 1 é menor que 2, ele é representado diretamente como 1 na última posição do número binário. Portanto, a posição mais baixa (unidade) recebe o valor 1.</p>
+           
+            <div class="input">
+                <label for="decId">Decimal:</label>
+                <input type="number" name="numDec" id="decId">
+                <input type="submit" value="Calcular" onclick="paraBinario(decId, res)">
+                <div class="resultado" id="res"></div>
+            </div>
+
+          
+        </section>
+    </main>
+
+    <script src="../principal.js"></script>
+    <script src="../scripts/binario.js"></script>
+</body>
+</html>

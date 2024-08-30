@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../principal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Decimal</title>
+</head>
+<body>
+    <header>
+        <span class="material-symbols-outlined" id="icon" onclick="abrirMenu(menu)">widgets</span>
+    </header>
+    <menu id="menu" >
+        <div>
+            <a href="../index.html">Menu</a>
+            <a href="../paginas/binario.html">Binário</a>
+            <a href="../paginas/octal.html">Octal</a>
+            <a href="../hexadecimal.html">Hexadecimal</a>
+        </div>
+    </menu>
+    <main>
+        <section>
+            <img src="../imagens/decimal.jpg" alt="decimal" class="intro">
+            <h1>Sistema Decimal</h1>
+            <p>O sistema decimal é um sistema de numeração posicional <strong>baseado em 10 símbolos: 0, 1, 2, 3, 4, 5, 6, 7, 8 e 9</strong>. Cada posição em um número decimal tem um valor baseado em potências de 10. A posição mais à direita representa as unidades (10<sup>0</sup>), a próxima à esquerda representa as dezenas (10<sup>1</sup>), depois as centenas (10<sup>2</sup>), e assim por diante.</p>
+
+            <h2>Características Principais:</h2>
+            <p>Base 10: Utiliza 10 dígitos (0-9).</p>
+            <p>Posicional: O valor de cada dígito depende da sua posição no número.</p>
+            <p>Progressão: Cada posição é uma potência de 10 (unidade, dezena, centena, milhar, etc.).</p>
+            <h1>Notação Posicional</h1>
+            <p>A notação posicional é o sistema em que o valor de cada dígito em um número depende da sua posição. No sistema decimal (base 10), cada posição representa uma potência de 10.</p>
+
+            <p>Vamos usar o número 3785 como exemplo:</p>
+
+            <p>Dígitos: 3, 7, 8, 5</p>
+            <p>Posições: As posições dos dígitos (da direita para a esquerda) correspondem a potências de 10: <strong> <br>Unidades (10⁰) <br>Dezenas (10¹) <br>Centenas (10²) <br>Milhares (10³)</strong>.</p>
+
+            <h2>Decomposição do número 3785:</h2>
+            <p>3 está na posição dos milhares: <br><strong class="calc"> 3x1000=3000</strong></p>
+            <p>7 está na posição das centenas: <br> <strong class="calc">7x100= 700</strong></p>
+            <p>8 está na posição das dezenas: <br> <strong class="calc">8x10=80</strong></p>
+            <p>5 está na posição das unidades: <br> <strong class="calc">5x1=5</strong></p>
+            
+            <p>Somando todos os valores: <strong class="calc">3000+700+80+5=3785</strong></p>
+
+            <p>Isso mostra como cada dígito contribui para o valor total do número, dependendo da sua posição, que é uma potência de 10 no sistema decimal.</p>
+
+            <h2>Limite da notação posicional</h2>
+            <p>Não existe uma <strong>"notação máxima" </strong>em sentido absoluto. A notação científica e as potências de 10 são ferramentas que podem representar números de qualquer magnitude, tanto muito grandes quanto muito pequenos. Portanto, não há um limite superior na notação científica.</p>
+
+            <h2>Pratica</h2>
+            <div class="input">
+                <label for="numId">Numero:</label>
+                <input type="number" name="num" id="numId" placeholder="Maximo: Trilhão" >
+                <input type="submit" value="Calcular" onclick="decimal(numId, res)">
+                <div class="resultado" id="res"></div>
+            </div>
+        </section>
+    </main>
+
+    <script src="../principal.js"></script>
+    <script src="../scripts/decimal.js"></script>
+</body>
+</html>

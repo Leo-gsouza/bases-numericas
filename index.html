@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="principal.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Menu</title>
+</head>
+<body>
+    <header>
+        <span class="material-symbols-outlined" id="icon" onclick="abrirMenu(menu)">widgets</span>
+    </header>
+    <menu id="menu" >
+        <div>
+            <a href="paginas/decimal.html">Decimal</a>
+            <a href="paginas/binario.html">Binário</a>
+            <a href="paginas/octal.html">Octal</a>
+            <a href="paginas/hexadecimal.html">Hexadecimal</a>
+        </div>
+    </menu>
+    <main>
+        <section>
+            <img src="imagens/geral.jpg" alt="bases numericas" class="intro">
+            <h1>Introdução</h1>
+            <p>Bases numéricas são sistemas de numeração que usamos para representar números. As mais comuns são:</p>
+            <p><strong>Base 10 (Decimal)</strong>: Usa 10 dígitos (0-9). É a mais usada no dia a dia.</p>
+            <p><strong>Base 2 (Binária)</strong>: Usa 2 dígitos (0 e 1). Comum em computação.</p>
+            <p><strong>Base 8 (Octal)</strong>: Usa 8 dígitos (0-7). Também usada em computação.</p>
+            <p><strong>Base 16 (Hexadecimal)</strong>: Usa 16 dígitos (0-9 e A-F). Usada para simplificar a leitura de números binários.</p>
+            <p>Cada dígito em uma base tem um peso diferente, que depende da sua posição e da base em questão. Para converter entre bases, usamos métodos específicos, como divisão sucessiva para decimBal para binário ou agrupamento de dígitos binários para binário para hexadecimal.</p>
+        </section>
+    </main>
+
+    <script src="principal.js"></script>
+</body>
+</html>
