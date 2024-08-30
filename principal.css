@@ -247,6 +247,16 @@ div.sistema > p > strong{
 
 
 
+/* =========================================imagens================================================ */
+img.conteudo{
+    display: block;
+    width: 300px;
+    margin: auto;
+
+    border: 2px solid var(--cor5);
+}
+
+
 /* =========================================animation================================================ */
 @keyframes rotation{
     0%{

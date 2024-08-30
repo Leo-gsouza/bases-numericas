@@ -104,6 +104,19 @@
                 <div class="resultado" id="res"></div>
             </div>
 
+            <h2>Converter Binario para Octal</h2>
+            <p>Para converter um número binário para octal, você pode seguir uma abordagem direta utilizando a conversão intermediária para decimal, mas há uma maneira mais eficiente ao trabalhar diretamente com binário e octal. Aqui está como você pode fazer isso:</p>
+            <p><strong>Agrupe os dígitos binários em blocos de 3 bits</strong>: Comece do final (direita) e agrupe os dígitos binários em blocos de 3. Se o número de dígitos não for múltiplo de 3, adicione zeros à esquerda.</p>
+            <p>Converta cada bloco para octal: Cada bloco de 3 bits representa um dígito octal.</p>
+            <img src="../imagens/binoct.JPG" alt="Binario para Octal" class="conteudo">
+            <p>Cada bloco de três bits representa um digito Octal. Os valores abaixo de cada digito (1,2,4) correspodem a base 2 multiplicada por sua potencia (2<sup>0</sup>, 2<sup>1</sup>, 2<sup>2</sup>). Apenas as potencias em que o digito é 1 serão somadas.</p>
+
+            <h2>Converter Binario para Hexadecimal</h2>
+            <p><strong>Agrupe os dígitos binários em blocos de 4 bits</strong>: Comece do final (direita) e agrupe os dígitos binários em blocos de 4. Se o número de dígitos não for múltiplo de 4, adicione zeros à esquerda.</p>
+            <p>Converta cada bloco para Hexadecimal: Cada bloco de 4 bits representa um dígito octal.</p>
+            <img src="../imagens/binhex.JPG" alt="Binario para Hexadecimal" class="conteudo">
+            <p>Cada bloco de quatro bits representa um dígito hexadecimal. Os valores associados a cada dígito (1, 2, 4, 8) correspondem às potências de 2 (2<sup>0</sup>, 2<sup>1</sup>, 2<sup>2</sup>, 2<sup>3</sup>). Somam-se apenas as potências onde o bit é 1. Por fim, substitua qualquer valor acima de 9 pelos caracteres correspondentes na base hexadecimal (A-F).</p>
+
           
         </section>
     </main>
